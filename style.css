@@ -1,0 +1,249 @@
+:root{
+	--pcol:#f1f1f1;
+	--scol:#554;
+	--shtcol:#fff;
+	--shbcol:#ddd;
+}
+/*:root{
+	--pcol:#232323;
+	--scol:#eee;
+	--shtcol:#2b2b2b;
+	--shbcol:#1a1a1a;
+}*/
+
+
+.mode-toggle {
+	position: fixed;
+	bottom: 5vmin;
+	right: 5vmin;
+	height: 10vmin;
+	width: 10vmin;
+	background: var(--scol);
+	border-radius: 50%;
+	text-align: center;
+	line-height: 10vmin;
+	color: var(--pcol);
+	font-size: 6vmin;
+}
+
+.mode-toggle i {
+
+}
+
+body{
+	margin: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	background: var(--pcol);
+}
+nav {
+	height: 9vmin;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	left: 0;
+	background: #004D40;
+}
+
+nav p.head {
+	color: #fff;
+	font-size: 3vmin;
+	font-family: sans-serif;
+	margin-top: 0;
+	line-height: 9vmin;
+	text-indent: 3vmin;
+
+}
+
+nav p.nav-links {
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 5vmin;
+}
+
+nav p.nav-links a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 2.2vmin;
+	text-transform: uppercase;
+	margin-right: 5vmin;
+	font-weight: bold;
+	font-family: sans-serif;
+	/*line-height: vmin;*/
+}
+
+nav p.nav-links a:hover {
+	color: #aaf;
+}
+
+
+section.calc-content {
+	margin-top: 10vmin;
+	width: 80%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	padding-bottom: 10vmin;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+
+section.calc-content p.head {
+	font-size: 4vmin;
+	margin-top: .5vmin;
+	text-align: center;
+	/*background: -webkit-linear-gradient(45deg, #fc4a1a, #f7b733);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  color: var(--scol);
+  font-family: sans-serif;
+  /*text-transform: uppercase;*/
+}
+
+section.calc-content p.text {
+	font-size: 2.3vmin;
+	width: 60%;
+	text-align: center;
+	color: var(--scol);
+	margin-top: 0;
+	/* line-height: 3vmin; */
+}
+
+
+section.calc-content.percentage div.calc{
+	/*height: 6vmin;*/
+	width: 80%;
+	background: inherit;
+
+	padding: 1vmin 0;
+	box-shadow: -.5vmin -.5vmin 1vmin var(--shtcol), .5vmin .5vmin 1vmin var(--shbcol);
+	margin-top: 10vmin;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	font-size: 2.3vmin;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: var(--scol);
+	margin-top: 5vmin;
+
+}
+
+section.calc-content.percentage div.calc input {
+	/*border: none;*/
+	border: .3vmin solid #777;
+	height: 3.5vmin;
+	color: var(--scol);
+	margin-right: 1.5vmin;
+	margin-left: 1.5vmin;
+	background-color: transparent;
+	font-size: 2.3vmin;
+	width: 10vmin;
+	text-align: center;
+	/*background: var(--shtcol);*/
+	/*background: v;*/
+
+}
+
+section.calc-content.percentage div.calc button{
+	border: none;
+	background: #004D40;
+	color: #fff;
+	height: 4.5vmin;
+	padding:0 2vmin;
+	text-align: center;
+
+	font-size: 2.6vmin;
+
+}
+
+section.calc-content.percentage div.calc button:hover {
+	background: #0a1;
+}
+
+section.calc-content.percentage div.calc input.result{
+	width: 15vmin;
+	margin-left: 4vmin;
+	text-align: center;
+}
+
+div.about-section {
+	margin-top: 15vmin;
+	box-shadow: -.5vmin -.5vmin 1vmin var(--shtcol), .5vmin .5vmin 1vmin var(--shbcol);
+	padding: 3vmin;
+	width: 120vmin;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+div.about-section p.text {
+	color: var(--scol);
+	font-size:3vmin;
+	line-height: 4vmin;
+}
+
+
+@media (orientation: portrait) {
+	section.calc-content.percentage div.calc{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		padding-bottom: 4vmin;
+		transform: scale(1.2);
+	}
+
+	main.index {
+		flex-direction: column;
+	}
+
+	section.calc-content p.head {
+		white-space: nowrap;
+	}
+
+	div.about-section {
+		width: 80vmin;
+	}
+
+	section.calc-content p.text{
+		width: 90%;
+	}
+	nav p.nav-links{
+		display: none;
+	}
+}
